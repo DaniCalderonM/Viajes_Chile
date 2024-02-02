@@ -14,3 +14,9 @@ $(window).on('scroll', function () {
 $(".fondot").click(function () {
     $(".tg").toggle("slow");
 });
+
+//  Este script tiene como función mostrarnos un mensaje desde la consola de nuestro navegador, que 
+// al hacer click sobre el boton "Enviar", nos indicara que el mensaje fue enviado con exito
+$("#enviar").click(function () {
+    alert("Su mensaje fue enviado correctamente~");
+});
