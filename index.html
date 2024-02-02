@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- En este lugar encontramos la seccion del head, que esta encargado de
+    entregar la informacion general (metadatos) de nuestro documento html y tambien de almacenar
+    links en un orden definido para que funcionen correctamente las librerias que utilicemos,
+por ejemplo: google fonts, boostrap 5.3.2 y nuestro link a css. -->
 
 <head>
     <meta charset="UTF-8">
@@ -18,8 +22,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
+<!-- En esta seccion comienza nuestro body, donde se escribira todo el codigo necesario para hacer la pagina web
+        y para que esta pueda ser visualizada. Es el cuerpo de nuestro trabajo -->
 
 <body>
+    <!-- En este lugar encontramos el Navbar, esta configurado para que realice el smooth scroll correspondiente
+        a las diferentes secciones de la pagina como quienes somos, destacados y contacto.
+        Ademas de tener el logo y el titulo de nuestra pagina.
+        La version utilizada es bootstrap 5.3.2 -->
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand w-50" href="#"><img class="tamaño-svc" src="./assets/img/viajes.svg"
@@ -38,17 +48,23 @@
             </div>
         </div>
     </nav>
-
+    <!-- En esta seccion encontramos el header, el cual se utiliza generalmente para mostrarnos
+la tematica/contenido principal de nuestra pagina. En esta ocasion el header contiene nuestro
+carrusel de imagenes. Esté lo obtenemos desde la documentacion de Bootstrap, y es responsivo.
+La version utilizada es bootstrap 5.3.2 -->
     <header>
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <!-- Imagen 1 Carrusel -->
                     <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Alpacas">
                 </div>
                 <div class="carousel-item">
+                    <!-- Imagen 2 Carrusel -->
                     <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Moais">
                 </div>
                 <div class="carousel-item">
+                    <!-- Imagen 3 Carrusel -->
                     <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguino">
                 </div>
             </div>
@@ -62,12 +78,16 @@
             </button>
         </div>
     </header>
-
-    <section id="quienessomos" class=" d-none d-sm-block">
+    <!-- Seccion ¿Quienes somos? de nuestro proyecto, en ella se utilizaron iconos de font awesome para los titulos
+    de cada parrafo, ademas añadimos la funcion "click" a los titulos, el cual que genera un toggle en todos
+    los parrafos a la vez. IMPORTANTE: Esta seccion desaparece en tamaños pequeños de pantalla, está activa desde
+pantallas medianas -->
+    <section id="quienessomos" class=" d-none d-md-block">
         <h3 class="text-white text-center pt-4 pb-2">¿QUIÉNES SOMOS?</h3>
         <div class="container">
             <hr class="barrita">
             <div class="row justify-content-center text-white">
+                <!-- PRIMER PARRAFO -->
                 <div class="col-4">
                     <h4 class="text-center fondot"><i class="fa-solid fa-plane"></i></h6>
                         <p class="tg">Lorem ipsum dolor sit amet consectetur
@@ -88,6 +108,7 @@
                             soluta libero modi nihil cumque laudantium
                         </p>
                 </div>
+                <!-- SEGUNDO PARRAFO -->
                 <div class="col-4">
                     <p class="tg">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Quos molestias at
@@ -108,6 +129,7 @@
                     </p>
                     <h4 class="text-center fondot"><i class="fa-solid fa-mountain"></i></h4>
                 </div>
+                <!-- TERCER PARRAFO -->
                 <div class="col-4">
                     <h4 class="text-center fondot"><i class="fa-solid fa-route"></i></h4>
                     <p class="tg">Lorem ipsum dolor sit amet consectetur
@@ -130,103 +152,117 @@
                 </div>
             </div>
         </div>
-</section>
-
-<section id="destacados" class="destacadoscss p-4" >
-    <h3 class="text-white text-center pt-4 pb-2 ">DESTACADOS</h3>
-    <hr class="barrita">
-    <div class="container">
-        <div class="d-flex flex-wrap justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 19rem;">
-                    <img src="./assets/img/card1.jpg" class="card-img-top" alt="cordillera">
-                    <div class="card-body">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+    </section>
+    <!-- En esta seccion encontralos los Destacados de la pagina, esta compuesta por 4 cards de bootstrap (los cuales
+        son responsivos), cada una de ellas tiene la imagen a mostrar, un titulo y un parrafo
+        con su respectiva información. La version utilizada es bootstrap 5.3.2 -->
+    <section id="destacados" class="destacadoscss p-4">
+        <h3 class="text-white text-center pt-4 pb-2 ">DESTACADOS</h3>
+        <hr class="barrita">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <!-- CARD 1 -->
+                    <div class="card" style="width: 19rem;">
+                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="cordillera">
+                        <div class="card-body">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 19rem;">
-                    <img src="./assets/img/card2.jpg" class="card-img-top2" alt="desierto">
-                    <div class="card-body">
-                        <h5>Consectetur adipisicing elit</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <!-- CARD 2 -->
+                    <div class="card" style="width: 19rem;">
+                        <img src="./assets/img/card2.jpg" class="card-img-top2" alt="desierto">
+                        <div class="card-body">
+                            <h5>Consectetur adipisicing elit</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 19rem;">
-                    <img src="./assets/img/card3.jpg" class="card-img-top" alt="salar">
-                    <div class="card-body">
-                        <h5>Sed do eiusmod tempor incididunt ut labore</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            sed do euismod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <!-- CARD 3 -->
+                    <div class="card" style="width: 19rem;">
+                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="salar">
+                        <div class="card-body">
+                            <h5>Sed do eiusmod tempor incididunt ut labore</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                sed do euismod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                <div class="card" style="width: 19rem;">
-                    <img src="./assets/img/card4.jpg" class="card-img-top" alt="selva">
-                    <div class="card-body">
-                        <h5>Ut enim ad minim veniam</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                    <!-- CARD 4 -->
+                    <div class="card" style="width: 19rem;">
+                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="selva">
+                        <div class="card-body">
+                            <h5>Ut enim ad minim veniam</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                sed do euismod tempor incididunt ut labore et dolore magna aliqua.<br><br></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="fondo-form p-5">
-    <h3 id="contacto" class="text-white text-center" >CONTACTO</h3>
-    <hr class="barrita">
-    <div class="container  text-white">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Asunto</label>
-            <input type="name" class="form-control" id="exampleFormControlInput2">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-        </div>
-        <button type="button" class="btn btn-info text-white" id="enviar">Enviar</button>
-    </div>
-</section>
-
-<footer class="pb-3 pt-4 ">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 justify-content-center">
-                <h4 class="text-white text-center">VIAJES CHILE</h4>
+    </section>
+    <!-- En esta seccion encontramos el Formulario de nuestra pagina, sacado de la documentacion de bootstrap y
+    el cual es responsivo. Además añadimos un Alert que al momento de presionar el boton "Enviar", nos 
+    muestra un mensaje emergente en nuestra pantalla. La version utilizada es bootstrap 5.3.2 -->
+    <section class="fondo-form p-5">
+        <h3 id="contacto" class="text-white text-center">CONTACTO</h3>
+        <hr class="barrita">
+        <div class="container  text-white">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1">
             </div>
-            <div class="col-6">
-                <div class="row justify-content-center">
-                    <div class="col-1 me-2">
-                        <a href="https://github.com/DaniCalderonM" target="_blank"><i
-                                class="fa-brands fa-square-github fa-2x"></i></a>
-                    </div>
-                    <div class="col-1 me-2">
-                        <a href="https://www.linkedin.com/in/danicsacalder%C3%B3nmes%C3%ADas/" target="_blank"><i
-                                class="fa-brands fa-linkedin fa-2x"></i></a>
-                    </div>
-                    <div class="col-1 me-2">
-                        <a href="https://twitter.com/ViajesChile" target="_blank"><i
-                                class="fa-brands fa-square-twitter fa-2x"></i></a>
-                    </div>
-                    <div class="col-1 me-2">
-                        <a href="https://web.facebook.com/viajeschilecl/?_rdc=1&_rdr" target="_blank"><i
-                                class="fa-brands fa-square-facebook fa-2x"></i></a>
-                    </div>
-</footer>
-
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Asunto</label>
+                <input type="name" class="form-control" id="exampleFormControlInput2">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <button type="button" class="btn btn-info text-white" id="enviar">Enviar</button>
+        </div>
+    </section>
+    <!-- Ultima seccion de nuesta pagina, compuesta por el Footer, en ella incluimos el nombre de la pagina y
+    con font awesome añadimos distitos iconos de redes sociales con sus respectivos links activos. -->
+    <footer class="pb-3 pt-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 justify-content-center">
+                    <h4 class="text-white text-center">VIAJES CHILE</h4>
+                </div>
+                <div class="col-6">
+                    <div class="row justify-content-center">
+                        <!-- GITHUB -->
+                        <div class="col-1 me-2">
+                            <a href="https://github.com/DaniCalderonM" target="_blank"><i
+                                    class="fa-brands fa-square-github fa-2x"></i></a>
+                        </div>
+                        <!-- LINKEDIN -->
+                        <div class="col-1 me-2">
+                            <a href="https://www.linkedin.com/in/danicsacalder%C3%B3nmes%C3%ADas/" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <!-- X/TWITTER -->
+                        <div class="col-1 me-2">
+                            <a href="https://twitter.com/ViajesChile" target="_blank"><i
+                                    class="fa-brands fa-square-twitter fa-2x"></i></a>
+                        </div>
+                        <!-- FACEBOOK -->
+                        <div class="col-1 me-2">
+                            <a href="https://web.facebook.com/viajeschilecl/?_rdc=1&_rdr" target="_blank"><i
+                                    class="fa-brands fa-square-facebook fa-2x"></i></a>
+                        </div>
+    </footer>
+    <!-- En este sector encontramos todos los scripts necesarios para que funcionen los elementos de las librerias que
+    utilicemos segun corresponda (similar a lo que encontramos en el head) -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8bcc232b0f.js" crossorigin="anonymous"></script>
     <!-- Js y popper de bootstrap -->
@@ -239,4 +275,5 @@
     <!-- Js -->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
