@@ -1,3 +1,14 @@
+// TOOLTIP 
+//Con este script configuramos la necesario para que estos mismos
+// funcionen dentro de nuestra pagina, en nuestro caso, se encuentra 
+// en el boton enviar del formulario
+var tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+);
+var tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
 // NAVBAR
 // Con este script logramos que el navbar sea transparente al inicio, y que al hacer scroll
 // en cuanto este sea mayor que 100, el navbar cambiara a color negro.

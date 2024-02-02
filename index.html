@@ -156,64 +156,65 @@ pantallas medianas -->
     <!-- En esta seccion encontralos los Destacados de la pagina, esta compuesta por 4 cards de bootstrap (los cuales
         son responsivos), cada una de ellas tiene la imagen a mostrar, un titulo y un parrafo
         con su respectiva información. La version utilizada es bootstrap 5.3.2 -->
-        <section id="destacados" class="destacadoscss">
-            <h3 class="text-white text-center pt-4 pb-2">DESTACADOS</h3>
-            <hr class="barrita">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3 mb-3">
-                        <!-- CARD 1 -->
-                        <div class="card">
-                            <img src="./assets/img/card1.jpg" class="card-img-top" alt="cordillera">
-                            <div class="card-body">
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. sed do euismod tempor incididunt ut 
-                                    labore et dolore magna aliqua.</p>
-                            </div>
+    <section id="destacados" class="destacadoscss">
+        <h3 class="text-white text-center pt-4 pb-2">DESTACADOS</h3>
+        <hr class="barrita">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <!-- CARD 1 -->
+                    <div class="card">
+                        <img src="./assets/img/card1.jpg" class="card-img-top" alt="cordillera">
+                        <div class="card-body">
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. sed do euismod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-3">
-                        <!-- CARD 2 -->
-                        <div class="card">
-                            <img src="./assets/img/card2.jpg" class="card-img-top" alt="desierto">
-                            <div class="card-body">
-                                <h5>Consectetur adipisicing elit</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. sed do euismod tempor incididunt ut 
-                                    labore et dolore magna aliqua.</p>
-                            </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <!-- CARD 2 -->
+                    <div class="card">
+                        <img src="./assets/img/card2.jpg" class="card-img-top" alt="desierto">
+                        <div class="card-body">
+                            <h5>Consectetur adipisicing elit</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. sed do euismod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-3">
-                        <!-- CARD 3 -->
-                        <div class="card">
-                            <img src="./assets/img/card3.jpg" class="card-img-top" alt="salar">
-                            <div class="card-body">
-                                <h5>Sed do eiusmod ut labore</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. sed do euismod tempor incididunt ut labore 
-                                    et dolore magna aliqua.</p>
-                            </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <!-- CARD 3 -->
+                    <div class="card">
+                        <img src="./assets/img/card3.jpg" class="card-img-top" alt="salar">
+                        <div class="card-body">
+                            <h5>Sed do eiusmod ut labore</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. sed do euismod tempor incididunt ut labore
+                                et dolore magna aliqua.</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-3">
-                        <!-- CARD 4 -->
-                        <div class="card">
-                            <img src="./assets/img/card4.jpg" class="card-img-top" alt="selva">
-                            <div class="card-body">
-                                <h5>Ut enim ad minim veniam</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur 
-                                    adipisicing elit. sed do euismod tempor incididunt ut 
-                                    labore et dolore magna aliqua.</p>
-                            </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <!-- CARD 4 -->
+                    <div class="card">
+                        <img src="./assets/img/card4.jpg" class="card-img-top" alt="selva">
+                        <div class="card-body">
+                            <h5>Ut enim ad minim veniam</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. sed do euismod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- En esta seccion encontramos el Formulario de nuestra pagina, sacado de la documentacion de bootstrap y
-    el cual es responsivo. Además añadimos un Alert que al momento de presionar el boton "Enviar", nos 
+    el cual es responsivo. En segundo lugar añadimos un tooltip el cual al ponernos sobre el boton de enviar 
+    nos entrega un mensaje. Para finalizar añadimos un Alert que al momento de presionar el boton "Enviar", nos 
     muestra un mensaje emergente en nuestra pantalla. La version utilizada es bootstrap 5.3.2 -->
     <section class="fondo-form p-5">
         <h3 id="contacto" class="text-white text-center">CONTACTO</h3>
@@ -231,7 +232,10 @@ pantallas medianas -->
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
             </div>
-            <button type="button" class="btn btn-info text-white" id="enviar">Enviar</button>
+            <!-- En este lugar encontramos el tooltip -->
+            <button id="enviar" type="button" class="btn btn-info text-white" data-bs-toggle="tooltip"
+                data-bs-placement="bottom" data-bs-title="Presiona para enviar tu mensaje">Enviar
+            </button>
         </div>
     </section>
     <!-- Ultima seccion de nuesta pagina, compuesta por el Footer, en ella incluimos el nombre de la pagina y
